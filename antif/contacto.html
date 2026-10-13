@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANTIF | Contacto</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <a class="logo" href="index.html">ANTIF</a>
+    <nav><ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="productos.html">Productos</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul></nav>
+  </header>
+
+  <main>
+    <section class="titulo-pagina">
+      <h1>Contacto</h1>
+      <p>¿Tenés alguna consulta? Escribinos.</p>
+    </section>
+    <section class="contenedor contacto">
+      <div>
+        <h2>Mandanos un mensaje</h2>
+        <p>Completá el formulario y nos pondremos en contacto.</p>
+      </div>
+      <!-- Reemplazá TU_ID por el identificador que te da Formspree -->
+      <form action="https://formspree.io/f/TU_ID" method="POST">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+        <label for="email">Correo electrónico</label>
+        <input type="email" id="email" name="email" placeholder="nombre@correo.com" required>
+
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu mensaje..." required></textarea>
+
+        <button class="boton" type="submit">Enviar mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <footer><p>ANTIF - Accesorios deportivos</p><a href="index.html">Volver al inicio</a></footer>
+</body>
+</html>
